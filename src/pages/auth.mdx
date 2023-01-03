@@ -1,0 +1,154 @@
+export const description =
+  'Authentication'
+
+# Authentication
+
+Authentication endpoints. {{ className: 'lead' }}
+
+## Login {{ tag: 'POST', label: '/login' }}
+
+<Row>
+  <Col>
+    ### Parameters
+
+    <Properties>
+      <Property name="email" type="string">
+      The user's email address.
+      </Property>
+      <Property name="password" type="string">
+      The user's password.
+      </Property>
+    </Properties>
+
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="POST" label="/login">
+
+    ```json {{ title: 'Body' }}
+    {
+      "email": "test@exam3ple.com",
+      "password": "password"
+    }
+
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      // empty
+    }
+    ```
+    </CodeGroup>
+
+  </Col>
+</Row>
+
+---
+
+## Register {{ tag: 'POST', label: '/register' }}
+
+<Row>
+  <Col>
+    ### Parameters
+
+    <Properties>
+      <Property name="name" type="string">
+      The user's username.
+      </Property>
+      <Property name="email" type="string">
+      The user's email address.
+      </Property>
+      <Property name="password" type="string">
+      The user's selected password.
+      </Property>
+      <Property name="password_confirmation" type="string">
+      The user's selected password confirmation.
+      </Property>
+    </Properties>
+
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="POST" label="/register">
+
+    ```json {{ title: 'Body' }}
+    {
+      "name": "Nicos",
+      "email": "test@exam3ple.com",
+      "password": "password",
+      "password_confirmation": "password"
+    }
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      // empty
+    }
+    ```
+    </CodeGroup>
+
+  </Col>
+</Row>
+
+---
+
+## Logout {{ tag: 'POST', label: '/logout' }}
+
+<Row>
+  <Col>
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="POST" label="/logout">
+
+    ```json {{ title: 'Body' }}
+    {
+      // empty
+    }
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      // empty
+    }
+    ```
+    </CodeGroup>
+
+  </Col>
+</Row>
