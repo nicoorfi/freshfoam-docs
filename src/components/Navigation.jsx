@@ -200,7 +200,9 @@ export const navigation = [
     title: 'Resources',
     links: [
       { title: 'Auth', href: '/auth' },
+      { title: 'Session', href: '/session' },
       { title: 'Users', href: '/users' },
+      { title: 'Stores', href: '/stores' },
       // { title: 'Contacts', href: '/contacts' },
       // { title: 'Conversations', href: '/conversations' },
       // { title: 'Messages', href: '/messages' },

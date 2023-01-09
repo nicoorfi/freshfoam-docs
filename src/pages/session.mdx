@@ -1,0 +1,131 @@
+export const description =
+  'Session'
+
+# Session
+
+Session endpoints. {{ className: 'lead' }}
+
+## Index {{ tag: 'GET', label: '/session' }}
+
+<Row>
+  <Col>
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="GET" label="/session">
+
+    ```json {{ title: 'Body' }}
+
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      "store_id": 1
+    }
+    ```
+    </CodeGroup>
+
+  </Col>
+</Row>
+
+---
+
+## Store {{ tag: 'POST|PUT', label: '/session' }}
+
+Replace user session.
+
+<Row>
+  <Col>
+    ### Parameters
+
+    <Properties>
+      <Property name="store_id" type="integer">
+      The store id.
+      </Property>
+    </Properties>
+
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="POST|PUT" label="/session">
+
+    ```json {{ title: 'Body' }}
+    {
+      "store_id": 1
+    }
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+    "store_id": 1
+    }
+    ```
+    </CodeGroup>
+
+  </Col>
+</Row>
+
+---
+
+## Update {{ tag: 'PATCH', label: '/session' }}
+
+Partialy update the user session.
+
+<Row>
+  <Col>
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="PATCH" label="/session">
+
+    ```json {{ title: 'Body' }}
+    {
+      "store_id": 3
+    }
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      "store_id": 3
+    }
+    ```
+    </CodeGroup>
+
+  </Col>
+</Row>
