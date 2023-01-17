@@ -153,20 +153,180 @@ Get authenticated user's stores.
     ```json {{ title: 'Response' }}
     {
       "data": {
-        "name": "Test Store",
+        "name": "To mirko spiti sto libadi",
         "address": "Lion Street 23, Narnia Disney",
-        "user_id": 1,
-        "updated_at": "2023-01-09T19:43:47.000000Z",
-        "created_at": "2023-01-09T19:43:47.000000Z",
-        "id": 4
+        "user_id": 2,
+        "updated_at": "2023-01-17T12:45:14.000000Z",
+        "created_at": "2023-01-17T12:45:14.000000Z",
+        "id": 7,
+        "teams": [
+          {
+            "id": 7,
+            "name": "Default Team",
+            "description": "",
+            "user_id": 2,
+            "created_at": "2023-01-17T12:45:14.000000Z",
+            "updated_at": "2023-01-17T12:45:14.000000Z",
+            "pivot": {
+              "store_id": 7,
+              "team_id": 7
+            },
+            "team_members": [
+              {
+                "id": 7,
+                "name": "Foulos",
+                "team_id": 7,
+                "user_id": 2,
+                "created_at": "2023-01-17T12:45:15.000000Z",
+                "updated_at": "2023-01-17T12:45:15.000000Z"
+              }
+            ]
+          }
+        ],
+        "menus": [],
+        "socials": [
+          {
+            "name": "Facebook",
+            "url": "https:\/\/facebook.com",
+            "store_id": 7,
+            "created_at": "2023-01-17T12:45:15.000000Z",
+            "updated_at": "2023-01-17T12:45:15.000000Z"
+          },
+          {
+            "name": "TikTok",
+            "url": "https:\/\/tiktok.com",
+            "store_id": 7,
+            "created_at": "2023-01-17T12:45:15.000000Z",
+            "updated_at": "2023-01-17T12:45:15.000000Z"
+          },
+          {
+        "name": "Instagram",
+        "url": "https:\/\/instagram.com",
+        "store_id": 7,
+        "created_at": "2023-01-17T12:45:15.000000Z",
+        "updated_at": "2023-01-17T12:45:15.000000Z"
+      },
+      {
+        "name": "Pinterest",
+        "url": "https:\/\/pinteres.com",
+        "store_id": 7,
+        "created_at": "2023-01-17T12:45:15.000000Z",
+        "updated_at": "2023-01-17T12:45:15.000000Z"
+      }
+    ]
       },
       "meta": {
         "auth": {
-          "id": 1
+          "id": 2
         }
       }
     }
+```
+    </CodeGroup>
+
+  </Col>
+</Row>
+
+---
+
+## Store {{ tag: 'GET', label: '/v1/store/{id}' }}
+
+<Row>
+  <Col>
+    ### Parameters
+
+    <Properties>
+    </Properties>
+
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="POST" label="/v1/store">
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
     ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      "data": {
+        "name": "To mirko spiti sto libadi",
+        "address": "Lion Street 23, Narnia Disney",
+        "user_id": 2,
+        "updated_at": "2023-01-17T12:45:14.000000Z",
+        "created_at": "2023-01-17T12:45:14.000000Z",
+        "id": 7,
+        "teams": [
+          {
+            "id": 7,
+            "name": "Default Team",
+            "description": "",
+            "user_id": 2,
+            "created_at": "2023-01-17T12:45:14.000000Z",
+            "updated_at": "2023-01-17T12:45:14.000000Z",
+            "pivot": {
+              "store_id": 7,
+              "team_id": 7
+            },
+            "team_members": [
+              {
+                "id": 7,
+                "name": "Foulos",
+                "team_id": 7,
+                "user_id": 2,
+                "created_at": "2023-01-17T12:45:15.000000Z",
+                "updated_at": "2023-01-17T12:45:15.000000Z"
+              }
+            ]
+          }
+        ],
+        "menus": [],
+        "socials": [
+          {
+            "name": "Facebook",
+            "url": "https:\/\/facebook.com",
+            "store_id": 7,
+            "created_at": "2023-01-17T12:45:15.000000Z",
+            "updated_at": "2023-01-17T12:45:15.000000Z"
+          },
+          {
+            "name": "TikTok",
+            "url": "https:\/\/tiktok.com",
+            "store_id": 7,
+            "created_at": "2023-01-17T12:45:15.000000Z",
+            "updated_at": "2023-01-17T12:45:15.000000Z"
+          },
+          {
+        "name": "Instagram",
+        "url": "https:\/\/instagram.com",
+        "store_id": 7,
+        "created_at": "2023-01-17T12:45:15.000000Z",
+        "updated_at": "2023-01-17T12:45:15.000000Z"
+      },
+      {
+        "name": "Pinterest",
+        "url": "https:\/\/pinteres.com",
+        "store_id": 7,
+        "created_at": "2023-01-17T12:45:15.000000Z",
+        "updated_at": "2023-01-17T12:45:15.000000Z"
+      }
+    ]
+      },
+      "meta": {
+        "auth": {
+          "id": 2
+        }
+      }
+    }
+```
     </CodeGroup>
 
   </Col>
