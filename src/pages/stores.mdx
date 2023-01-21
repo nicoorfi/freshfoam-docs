@@ -36,40 +36,226 @@ Get authenticated user's stores.
     <CodeGroup title="Response" tag="200 OK">
     ```json {{ title: 'Response' }}
     {
+
       "data": [
+          {
+      "id": 1,
+      "name": "Schumm Ltd",
+      "address": "92318 Houston Wall Apt. 021\nWest Myrtlebury, IN 07301",
+      "user_id": 1,
+      "created_at": "2023-01-21T19:10:49.000000Z",
+      "updated_at": "2023-01-21T19:10:49.000000Z",
+      "teams": [
         {
           "id": 1,
-          "name": "Test Store",
-          "address": "Lion Street 23, Narnia Disney",
+          "name": "distinctio",
+          "description": "Alice. 'Who's making personal remarks now?' the Hatter went on, 'that they'd let Dinah stop in the air, and came flying down upon her: she gave a little worried. 'Just about as curious as it settled.",
           "user_id": 1,
-          "created_at": "2023-01-05T09:18:06.000000Z",
-         "updated_at": "2023-01-05T09:18:06.000000Z"
-       },
-       {
-         "id": 2,
-         "name": "Test Store",
-         "address": "Lion Street 23, Narnia Disney",
-         "user_id": 1,
-         "created_at": "2023-01-05T09:34:19.000000Z",
-         "updated_at": "2023-01-05T09:34:19.000000Z"
-       },
-       {
-         "id": 3,
-         "name": "Test Store",
-         "address": "Lion Street 23, Narnia Disney",
-         "user_id": 1,
-         "created_at": "2023-01-05T09:34:48.000000Z",
-         "updated_at": "2023-01-05T09:34:48.000000Z"
-       },
-       {
-         "id": 4,
-         "name": "Test Store",
-         "address": "Lion Street 23, Narnia Disney",
-         "user_id": 1,
-         "created_at": "2023-01-09T19:43:47.000000Z",
-         "updated_at": "2023-01-09T19:43:47.000000Z"
-       }
-     ],
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z",
+          "pivot": {
+            "store_id": 1,
+            "team_id": 1
+          },
+          "team_members": [
+            {
+              "id": 1,
+              "name": "Orie Krajcik",
+              "team_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 2,
+              "name": "Brenda Schmitt",
+              "team_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 3,
+              "name": "Lincoln Cole",
+              "team_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 4,
+              "name": "Wilbert Flatley",
+              "team_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 5,
+              "name": "Zora Willms Sr.",
+              "team_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            }
+          ]
+        }
+      ],
+      "menus": [
+        {
+          "id": 1,
+          "name": "consectetur",
+          "description": "King and Queen of Hearts were seated on their slates, when the race was over. Alice was not here before,' said Alice,) and round goes the clock in a very fine day!' said a whiting to a day-school.",
+          "store_id": 1,
+          "user_id": 1,
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z",
+          "menu_items": [
+            {
+              "id": 1,
+              "name": "ducimus",
+              "price": 6.8,
+              "menu_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 2,
+              "name": "voluptates",
+              "price": 0.03,
+              "menu_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 3,
+              "name": "laudantium",
+              "price": 0.42,
+              "menu_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 4,
+              "name": "et",
+              "price": 8.32,
+              "menu_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            },
+            {
+              "id": 5,
+              "name": "odit",
+              "price": 818708.71,
+              "menu_id": 1,
+              "user_id": 1,
+              "created_at": "2023-01-21T19:10:49.000000Z",
+              "updated_at": "2023-01-21T19:10:49.000000Z"
+            }
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "name": "Crystal Zboncak",
+          "url": "http:\/\/murazik.com\/quo-minus-qui-unde-rem-cum.html",
+          "store_id": 1,
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z"
+        },
+        {
+          "name": "Dr. Bettie O'Conner DDS",
+          "url": "http:\/\/www.moen.net\/tenetur-beatae-sit-et-quis-aliquam",
+          "store_id": 1,
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z"
+        },
+        {
+          "name": "Mr. Khalid Wuckert V",
+          "url": "http:\/\/nikolaus.biz\/quam-iste-dolores-dicta-commodi-laborum-explicabo-quia",
+          "store_id": 1,
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z"
+        },
+        {
+          "name": "Mathilde Glover",
+          "url": "http:\/\/www.hodkiewicz.com\/nostrum-aliquam-eos-tempora-quia.html",
+          "store_id": 1,
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z"
+        },
+        {
+          "name": "Dr. Carolyn Hand I",
+          "url": "http:\/\/runolfsson.net\/temporibus-sit-ex-eveniet-dolore-sunt-sed-velit",
+          "store_id": 1,
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z"
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "tenetur",
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z",
+          "pivot": {
+            "taggable_id": 1,
+            "tag_id": 1,
+            "taggable_type": "store"
+          }
+        },
+        {
+          "id": 2,
+          "name": "rerum",
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z",
+          "pivot": {
+            "taggable_id": 1,
+            "tag_id": 2,
+            "taggable_type": "store"
+          }
+        },
+        {
+          "id": 3,
+          "name": "sint",
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z",
+          "pivot": {
+            "taggable_id": 1,
+            "tag_id": 3,
+            "taggable_type": "store"
+          }
+        },
+        {
+          "id": 4,
+          "name": "et",
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z",
+          "pivot": {
+            "taggable_id": 1,
+            "tag_id": 4,
+            "taggable_type": "store"
+          }
+        },
+        {
+          "id": 5,
+          "name": "cupiditate",
+          "created_at": "2023-01-21T19:10:49.000000Z",
+          "updated_at": "2023-01-21T19:10:49.000000Z",
+          "pivot": {
+            "taggable_id": 1,
+            "tag_id": 5,
+            "taggable_type": "store"
+          }
+        }
+      ]
+    },
+
+      ],
      "links": {
         "first": "http:\/\/127.0.0.1:8000\/v1\/store?page=1",
         "last": "http:\/\/127.0.0.1:8000\/v1\/store?page=1",

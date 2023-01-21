@@ -1,0 +1,67 @@
+export const description =
+  'Menus'
+
+# Menus
+
+Menus endpoints. {{ className: 'lead' }}
+
+## Update {{ tag: 'PUT', label: '/v1/menus/{id}' }}
+
+Update a Menu Item.
+
+<Row>
+  <Col>
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="PUT" label="/v1/menus/{id}">
+
+    ```json {{ title: 'Body' }}
+    {
+      "name": "Souvlakia",
+      "description": "Ta kaluter souvlakia"
+    }
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      "data": {
+        "id": 1,
+        "name": "Souvlakia",
+        "description": "Ta kaluter souvlakia",
+        "store_id": 1,
+        "user_id": 1,
+        "created_at": "2023-01-21T19:40:35.000000Z",
+        "updated_at": "2023-01-21T19:52:18.000000Z",
+        "menu_items": [
+          {
+            "id": 1,
+            "name": "Souvlakia",
+            "price": 103.32,
+            "menu_id": 1,
+            "user_id": 1,
+            "created_at": "2023-01-21T19:40:35.000000Z",
+            "updated_at": "2023-01-21T19:49:01.000000Z"
+          }
+        ]
+      }
+    }
+    ```
+        </CodeGroup>
+
+  </Col>
+</Row>
+
+---

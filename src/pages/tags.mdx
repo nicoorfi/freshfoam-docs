@@ -1,0 +1,52 @@
+export const description =
+  'Tags'
+
+# Tags
+
+Tags endpoints. {{ className: 'lead' }}
+
+## Update {{ tag: 'PUT', label: '/v1/tag/{id}' }}
+
+Update a Tag.
+
+<Row>
+  <Col>
+  </Col>
+  <Col sticky>
+
+    <CodeGroup title="Request" tag="PUT" label="/v1/tag/{id}">
+
+    ```json {{ title: 'Body' }}
+    {
+      "name": "Katachas"
+    }
+    ```
+
+    ```json {{ title: 'Headers' }}
+    {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-XSRF-TOKEN": "{{ % Cookie -> XSRF-TOKEN  % }}"
+    }
+
+    ```
+
+    </CodeGroup>
+
+    <CodeGroup title="Response" tag="200 OK">
+    ```json {{ title: 'Response' }}
+    {
+      "data": {
+        "id": 1,
+        "name": "Kataxas",
+        "created_at": "2023-01-21T19:29:52.000000Z",
+        "updated_at": "2023-01-21T19:36:57.000000Z"
+      }
+    }
+    ```
+    </CodeGroup>
+
+  </Col>
+</Row>
+
+---
